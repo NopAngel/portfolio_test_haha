@@ -1,0 +1,328 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body{
+	background: #fff;
+	font-family: 'Geist', sans-serif;
+}
+
+/*HEADER*/
+
+header {
+	width: 100%;
+	position: fixed;
+	padding: 20px;
+	z-index: 10000;
+	background:#fff;
+}
+
+.header_title{
+	font-size: 1.23em;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	gap:20px;
+}
+
+header a{
+	color: initial;
+	text-decoration: none;
+}
+
+header ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+header section{
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap:30px;
+}
+
+header li{
+	list-style: none;
+}
+
+
+/*HERO*/
+
+.hero_sect{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+.hero_title{
+	font-size: 3em;
+	line-height: 1;
+}
+
+.hero_desc{
+	font-size: 1.25em;
+	line-height: 1.75em;
+	max-width: 42em;
+	margin: 0 auto;
+	opacity: 80%;
+}
+.hero_div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:20px;
+}
+
+.hero_card{
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	font-size:1em;
+	gap:10px;
+	transition: all .3s ;
+}
+
+.hero_card:hover{
+	font-size:1.15em;
+	
+}
+
+/*ABOUT ME*/
+
+.about_sect{
+	width: 70%;
+	margin: 0 auto;
+	margin-top:200px;
+	box-shadow: var(#000, 0 0 #0000), var(#000, 0 0 #0000), var(#000);
+	border-top:1px solid #5a5a5a26;
+	border-bottom:1px solid #5a5a5a26;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.about_sect h1.about_title{
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.about_sect h3{
+	letter-spacing: -0.025em;
+	line-height: 1;
+	font-weight: 600;
+	font-size:1.5em;
+}
+
+.sect_about_desc{
+	margin-top: 30px;
+}
+
+/*SKILLS*/
+
+.skills_sect{
+	width: 70%;
+	margin:0 auto;
+	margin-top: 200px;
+	text-align: center;
+}
+
+.skills_title{
+	font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 30px;
+}
+
+.container_skills_card{
+	display: grid;
+	text-align: left;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap:20px;
+}
+
+.card_skills{
+	width: 400px;
+	border:1px solid #5a5a5a26;
+	transition: all .3s ease;
+}
+
+.card_skills:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+.header_card{
+	display: flex;
+	gap:10px;
+	font-size: 20px;
+	align-items: center;
+background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(229,231,235,1) 100%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.section_card{
+	padding: 10px;
+}
+
+/*Projects*/
+
+.projects_sect{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.title_sect_projects {
+	font-size:1.875rem;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.sect_project_container{
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin:0 auto;	
+	gap:20px;
+}
+
+.card_project{
+	padding: 20px;
+	border:1px solid #5a5a5a26;
+	border-bottom:4px solid #d1d5db;
+	transition: all .3s ease;
+}
+
+.card_project:hover{
+	transform: translateY(-10px);
+
+}
+
+
+/*FOOTER*/
+
+footer{
+	border-top:1px solid #5a5a5a26;
+	padding: 20px;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer li{
+	list-style: none;
+}
+
+footer a{
+	color: initial;
+}
+
+footer section{
+	display: flex;
+}
+
+footer ul{
+	display: flex;
+	gap:20px;
+}
+
+.animate-on-scroll {
+      opacity: 0;
+      transition: opacity 0.6s ease-out;
+ }
+  .animate-on-scroll.visible {
+      opacity: 1;
+ }
+
+
+@media only screen and (max-width: 1500px) {
+	.container_skills_card{
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+	.skills_sect{
+		width: 95%;
+		margin:0 auto;
+	}
+
+
+.skills_sect{
+	width: 95%;
+	margin:0 auto;
+}
+
+.card_skills{
+	width: 400px;
+}
+
+.card_project{
+	width: 100%;
+	margin: 20px;
+}
+
+.sect_project_container{
+
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	gap:20px;
+}
+
+
+}
+
+@media only screen and (max-width: 900px) {
+  .about_sect h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.hero_sect{
+	width: 89%;
+	margin:0 auto;
+}
+
+.container_skills_card{
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+
+}
+
+.skills_sect{
+	width: 95%;
+	margin:0 auto;
+}
+
+.card_skills{
+	width: 100%;
+}
+
+.header_card{
+	width: 100%;
+}
+
+.projects_sect{
+	width: 100%;
+}
+
+.sect_project_container{
+
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.card_project{
+	width: 100%;
+}
+
+}
+
+.language{
+	font-size:14px;
+	padding: 2px;
+	opacity:70%;
+}
